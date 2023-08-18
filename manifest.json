@@ -1,0 +1,21 @@
+{
+    "manifest_version": 3,
+    "name": "hTab",
+    "author": "beyond",
+    "version": "0.1.0",
+    "description": "Limit maximum number of open tabs",
+    "icons": {
+        "16": "htab16.png",
+        "48": "htab48.png",
+        "128": "htab128.png"
+    },
+    "permissions": ["tabs","storage","tabGroups"],
+    "action": {
+        "default_title": "hTab",
+        "default_icon": "htab48.png",
+        "default_popup": "popup.html"
+    },
+    "background": {
+        "service_worker": "destroyer.js"
+    }
+}
