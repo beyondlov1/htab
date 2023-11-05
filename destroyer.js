@@ -37,7 +37,7 @@ async function _getMax() {
 
 async function _getAlgo() {
     let p = await getData2("algo")
-    return p.algo || 'used';
+    return p.algo || 'accessedThenOldest';
 }
 
 function _markActive(tabId) {

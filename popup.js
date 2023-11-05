@@ -54,7 +54,7 @@ function _run() {
 
     getData2("algo").then((algo)=>{
         getData2("max").then((max)=>{
-            let algo1 = algo.algo || 'used';
+            let algo1 = algo.algo || 'accessedThenOldest';
             let max1 = parseInt(max.max || 20);
             $('body').html(Aftershave.render('popup', { options: options, algo: algo1, max: max1 }));
         })
