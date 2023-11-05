@@ -4,7 +4,7 @@
     e.templates={},
     e.render=function(a,t){return e.templates[a]?e.templates[a].call(e,t||{}):""},
     e.templates.popup=function(e){
-        var a,t,l='<h1>hTab</h1><form><h2>Maximum Tabs:</h2><select id="max" name="max"> ';
+        var a,t,l='<h1>HTAB</h1><form><h2>Maximum Tabs:</h2><select id="max" name="max"> ';
         for(var o in e.options)
         t=e.max==o,t&&(a=!0),
         l+=' <option value="'+o+'"',t&&(l+=" selected"),l+=">"+e.options[o]+"</option> ";
